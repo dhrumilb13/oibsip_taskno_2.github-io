@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>OASIS_INFOBYTE_LEVEL_2_TASK_2</title>
+</head>
+
+<body>
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <div class="slide first">
+                <div class="img1">
+                    <img src="Pics Photos - Wallpaper Mahatma Gandhi Nice Collection.png">
+                    <div class="img1Text">
+                        <h1 class="bapu">Mahatma Gandhi</h1>
+                        <hr size="4" width="90%" color="black">
+                        <p class="bapu1">Mahatma Gandhi was the greatest leader of his times and the millions of people
+                            used to respect and follow him. He completely changed his attire and wore a simple
+                            loincloth, which, he thought, would let him connect to Indian poor. He took an active part
+                            in the Indian Independence Movement and led India to the path of Independence through truth
+                            and righteousness.</p>
+                        <h2 class="bapu2">"Life as if were to die tomorrow learn as if you were to live forever."</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="slide second">
+                <div class="img2">
+                    <img src="Comp 10.jpg"></img>
+                    <div class="imag2Text">
+                        <h1 class="SV">Swami Vivekananda</h1>
+                        <hr size="4" width="90%" color="black">
+                        <p class="SV1">Swami Vivekananda was a Hindu monk and direct disciple of Sri Ramakrishna.
+                            Vivekananda played a key role in the introduction of Indian yoga and Vedanta philosophy in
+                            the West. He made a strong impression at the inaugural World Parliament of Religions in
+                            Chicago, 1893 giving a powerful speech on the underlying unity of world religions. He
+                            taught a philosophy of traditional meditation and also selfless service (karma yoga). He
+                            advocated emancipation for Indian women and an end to the worst excess of the caste system.
+                            He is considered an important figurehead of India’s growing self-confidence and later
+                            nationalist leaders often said they were inspired by his teachings and personality.</p>
+                        <h2 class="SV2">"Everything is easy when you are busy.But nothing is easy when you are lazy."
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+
+            </div>
+        </div>
+
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+
+        </div>
+
+    </div>
+
+    <script>
+        var counter=1;
+        setInterval(function(){
+            document.getElementById('radio'+counter).checked=true;
+            counter++;
+            if(counter>2){
+                counter=1;
+            }
+        }, 5000);
+    </script> 
+</body>
+
+</html>
